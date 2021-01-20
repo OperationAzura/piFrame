@@ -1,0 +1,9 @@
+[Unit]
+Description=Starts the picture frame
+After=network.target
+
+[Service]
+ExecStart=/bin/bash /home/pi/piFrame.sh
+Restart=always
+[Install]
+WantedBy=default.target
